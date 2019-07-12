@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+    <TextView
+        android:id="@+id/detailUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/detailIcon"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="356dp"
+        android:layout_marginRight="356dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toEndOf="@+id/detailIcon"
+        android:layout_toRightOf="@+id/detailIcon"
+        android:paddingLeft="3dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/detailImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailIcon" />
+
+    <ImageView
+        android:id="@+id/detailImage"
+        android:layout_width="345dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/detailUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="38dp"
+        android:scaleType="centerCrop"
+        android:transitionName="postImage"
+        app:layout_constraintBottom_toTopOf="@+id/detailHeart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailIcon"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/detailDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailHeart"
+        android:layout_alignStart="@+id/detailImage"
+        android:layout_alignLeft="@+id/detailImage"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="18dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailHeart" />
+
+    <ImageView
+        android:id="@+id/detailHeart"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailImage"
+        app:srcCompat="@drawable/ufi_heart" />
+
+    <ImageView
+        android:id="@+id/detailComment"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/detailHeart"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/detailHeart"
+        app:layout_constraintStart_toEndOf="@+id/detailHeart"
+        app:layout_constraintTop_toBottomOf="@+id/detailImage"
+        app:srcCompat="@drawable/ufi_comment"
+        android:layout_toRightOf="@+id/detailHeart" />
+
+    <ImageView
+        android:id="@+id/detailShare"
+        android:layout_width="47dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/detailHeart"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/detailComment"
+        app:layout_constraintStart_toEndOf="@+id/detailComment"
+        app:layout_constraintTop_toBottomOf="@+id/detailImage"
+        app:srcCompat="@drawable/ufi_new_direct"
+        android:layout_toRightOf="@+id/detailComment" />
+
+    <ImageView
+        android:id="@+id/detailBookmark"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/detailHeart"
+        android:layout_marginStart="142dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/detailShare"
+        app:layout_constraintTop_toBottomOf="@+id/detailImage"
+        app:srcCompat="@drawable/ufi_save" />
+
+    <ImageView
+        android:id="@+id/detailIcon"
+        android:layout_marginStart="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:padding="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/detailTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailDescription"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
